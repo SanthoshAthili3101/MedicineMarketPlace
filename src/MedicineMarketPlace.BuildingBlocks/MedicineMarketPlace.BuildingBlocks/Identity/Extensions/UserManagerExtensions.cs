@@ -1,12 +1,7 @@
 ﻿using MedicineMarketPlace.BuildingBlocks.Identity.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MedicineMarketPlace.BuildingBlocks.Identity.Extensions
 {
@@ -15,7 +10,7 @@ namespace MedicineMarketPlace.BuildingBlocks.Identity.Extensions
         public static async Task<ApplicationUser> FindByEmailFromClaimsPrinciple(this UserManager<ApplicationUser> input, ClaimsPrincipal user)
         {
             var email = user.FindFirstValue(ClaimTypes.Email);
-            return await input.Users.SingleOrDefaultAsync(x => x.Email == email && x.IsActive == true);
+            return await input.Users.SingleOrDefaultAsync(x => x.Email == email);
         }
 
         public static async Task<ApplicationUser> FindByUserNameFromClaimsPrinciple(this UserManager<ApplicationUser> input, ClaimsPrincipal user)

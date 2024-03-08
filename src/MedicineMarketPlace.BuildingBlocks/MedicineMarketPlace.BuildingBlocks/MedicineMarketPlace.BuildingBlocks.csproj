@@ -12,35 +12,36 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MailKit" Version="4.4.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
-
+    
+<FrameworkReference Include="Microsoft.AspNetCore.App" />	  
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
-	  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
-
-
+	  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="8.0.0" />  
+      <PackageReference Include="MailKit" Version="4.4.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />	
+	  
 
 	  <PackageReference Include="CsvHelper" Version="30.0.1" />
 	  <PackageReference Include="Dapper" Version="2.0.123" />
 	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
-	  <PackageReference Include="AutoMapper" Version="11.0.1" />
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
 	  <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
 	  <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-	  <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+	  
 	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
 	  <PackageReference Include="FluentValidation" Version="11.2.1" />
-	  <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
-	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8" />
 	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor" Version="2.2.0" />
-	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.9" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+
+
+	  <PackageReference Include="RazorPay.Core" Version="1.0.2" />
+	  <PackageReference Include="Stripe.net" Version="41.20.0" />
+	  <PackageReference Include="Select.HtmlToPdf.NetCore" Version="22.2.0" />
   </ItemGroup>
 
 </Project>

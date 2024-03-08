@@ -3,17 +3,7 @@
     public static class ApplicationUserPolicies
     {
         public const string AdminPolicy = "AdminPolicy";
+        public const string SuperAdminPolicy = "SuperAdminPolicy";
 
-        public const string SchoolAdminPolicy = "SchoolAdminPolicy";
-
-        public const string TeacherPolicy = "TeacherPolicy";
-
-        public const string StudentPolicy = "StudentPolicy";
-
-        public const string MultiPolicy = "MultiPolicy";
-
-        public const string UserPolicy = "UserPolicy";
-
-        public const string AdminUserPolicy = "AdminUserPolicy";
     }
 }

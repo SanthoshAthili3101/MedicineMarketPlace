@@ -1,6 +1,0 @@
-@MedicineMarketPlace.Admin.Api_HostAddress = http://localhost:5236
-
-GET {{MedicineMarketPlace.Admin.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

@@ -24,8 +24,6 @@ namespace MedicineMarketPlace.BuildingBlocks
         private const string SmsConfiguration = "Sms";
         private const string FirebaseConfiguration = "Firebase";
         private const string EmailConfigSection = "Email";
-        private const string MongoDbSection = "MongoDb";
-
 
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
@@ -57,12 +55,7 @@ namespace MedicineMarketPlace.BuildingBlocks
             services.AddAuthorization(opt =>
             {
                 opt.AddPolicy(ApplicationUserPolicies.AdminPolicy, policy => policy.RequireRole(ApplicationUserRoles.Admin));
-                opt.AddPolicy(ApplicationUserPolicies.SchoolAdminPolicy, policy => policy.RequireRole(ApplicationUserRoles.SchoolAdmin));
-                opt.AddPolicy(ApplicationUserPolicies.TeacherPolicy, policy => policy.RequireRole(ApplicationUserRoles.Teacher));
-                opt.AddPolicy(ApplicationUserPolicies.StudentPolicy, policy => policy.RequireRole(ApplicationUserRoles.Student));
-                opt.AddPolicy(ApplicationUserPolicies.MultiPolicy, policy => policy.RequireRole(ApplicationUserRoles.Admin, ApplicationUserRoles.SchoolAdmin, ApplicationUserRoles.Teacher, ApplicationUserRoles.Student));
-                opt.AddPolicy(ApplicationUserPolicies.UserPolicy, policy => policy.RequireRole(ApplicationUserRoles.User));
-                opt.AddPolicy(ApplicationUserPolicies.AdminUserPolicy, policy => policy.RequireRole(ApplicationUserRoles.Admin, ApplicationUserRoles.User));
+                opt.AddPolicy(ApplicationUserPolicies.SuperAdminPolicy, policy => policy.RequireRole(ApplicationUserRoles.SuperAdmin));
             });
 
             services.AddScoped<IJwtService, JwtService>();
@@ -116,7 +109,6 @@ namespace MedicineMarketPlace.BuildingBlocks
             services.AddScoped<IResponseCacheService, ResponseCacheService>();
             return services;
         }
-
 
     }
 }
