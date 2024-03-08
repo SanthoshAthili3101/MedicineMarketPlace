@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using MedicineMarketPlace.Admin.Application.Models.User;
 using MedicineMarketPlace.BuildingBlocks.Identity.Models;
 using Newtonsoft.Json;
 

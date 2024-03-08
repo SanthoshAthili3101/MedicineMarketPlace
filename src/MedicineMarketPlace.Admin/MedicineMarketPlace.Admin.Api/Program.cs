@@ -10,9 +10,9 @@ using MedicineMarketPlace.BuildingBlocks.Extensions;
 using MedicineMarketPlace.Admin.Infrastructure.DatabaseMigrations;
 using MedicineMarketPlace.Admin.Infrastructure.SeedData;
 using Microsoft.AspNetCore.Mvc;
-using MedicineMarketPlace.Admin.Application.Models.Mapper;
 using MedicineMarketPlace.Admin.Application;
 using MedicineMarketPlace.BuildingBlocks.MiddleWare;
+using MedicineMarketPlace.Admin.Application.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;

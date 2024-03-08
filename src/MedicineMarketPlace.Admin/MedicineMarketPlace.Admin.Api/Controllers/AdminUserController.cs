@@ -1,5 +1,4 @@
-﻿using MedicineMarketPlace.Admin.Application.Models.User;
-using MedicineMarketPlace.Admin.Application.Services;
+﻿using MedicineMarketPlace.Admin.Application.Services;
 using MedicineMarketPlace.Admin.Domain.Constants;
 using MedicineMarketPlace.BuildingBlocks.Api.Controllers;
 using MedicineMarketPlace.BuildingBlocks.Api.Models;
@@ -10,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using MedicineMarketPlace.Admin.Application.Models;
 
 namespace MedicineMarketPlace.Admin.Api.Controllers
 {
