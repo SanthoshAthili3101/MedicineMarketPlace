@@ -18,9 +18,8 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 // Add services to the container.
 builder.Services.AddDbContext<MedicineMarketDbContext>(options =>
-{
-    options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
-});
+    options.UseMySql(configuration.GetConnectionString("DefaultConnection"),
+                     new MySqlServerVersion(new Version(8, 0, 28))));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
         .AddEntityFrameworkStores<MedicineMarketDbContext>()
@@ -105,7 +104,7 @@ app.UseAuthorization();
 app.MapControllers();
 app.MapHealthChecks($"/health");
 
-app.UseMiddleware<ExceptionMiddleware>();
+//app.UseMiddleware<ExceptionMiddleware>();
 
 try
 {

@@ -30,6 +30,8 @@
 	  <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0" />
 	  <PackageReference Include="AutoMapper" Version="13.0.1" />
 	  <PackageReference Include="MongoDB.Driver" Version="2.19.1" />
+	  <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.0" />
+	  <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0" />
 	  <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
 	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
 	  
