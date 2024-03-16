@@ -82,7 +82,7 @@ builder.Services.AddAutoMapper(new Assembly[]
     Assembly.GetAssembly(typeof(ModelMapper))
 });
 
-builder.Services.MMPAdminServices();
+builder.Services.RegisterServices();
 builder.Services.AddDbHealthCheck(configuration);
 
 var app = builder.Build();

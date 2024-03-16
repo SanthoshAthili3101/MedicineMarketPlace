@@ -121,6 +121,10 @@
     <value>All Admin Users</value>
     <comment>All Admin Users</comment>
   </data>
+  <data name="CreateTaxStatus" xml:space="preserve">
+    <value>Tax status created successfully</value>
+    <comment>Tax status created successfully</comment>
+  </data>
   <data name="CreateUser" xml:space="preserve">
     <value>User created successfully</value>
     <comment>User created successfully</comment>
@@ -148,6 +152,18 @@
   <data name="SomethingWentWrong" xml:space="preserve">
     <value>Something Went Wrong</value>
     <comment>Something Went Wrong</comment>
+  </data>
+  <data name="TaxStatus" xml:space="preserve">
+    <value>Retrieve tax status details</value>
+    <comment>Retrieve tax status details</comment>
+  </data>
+  <data name="TaxStatuses" xml:space="preserve">
+    <value>Retrieve all tax status details</value>
+    <comment>Retrieve all tax status details</comment>
+  </data>
+  <data name="TaxStatusNotFound" xml:space="preserve">
+    <value>Tax status not found</value>
+    <comment>Tax status not found</comment>
   </data>
   <data name="UpdateUser" xml:space="preserve">
     <value>User updated successfully</value>

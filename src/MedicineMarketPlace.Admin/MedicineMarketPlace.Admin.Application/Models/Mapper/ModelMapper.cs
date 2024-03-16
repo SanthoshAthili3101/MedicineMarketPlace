@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MedicineMarketPlace.BuildingBlocks.Identity.Models;
+using MedicineMarketPlace.Shared.Entities;
 using Newtonsoft.Json;
 
 namespace MedicineMarketPlace.Admin.Application.Models
@@ -17,6 +18,11 @@ namespace MedicineMarketPlace.Admin.Application.Models
             .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName.Trim()));
 
             CreateMap<UpdateUserDto, ApplicationUser>();
+
+            //TaxStatus
+            CreateMap<TaxStatus, TaxStatusDto>();
+            CreateMap<CreateOrUpdateTaxStatusDto, TaxStatus>()
+            .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name.Trim()));
         }
         private string SetNullValue()
         {

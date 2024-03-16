@@ -1,5 +1,6 @@
 ﻿using MedicineMarketPlace.BuildingBlocks.EntityFramework.Context;
 using MedicineMarketPlace.BuildingBlocks.Identity.Models;
+using MedicineMarketPlace.Shared.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MedicineMarketPlace.Shared.Context
@@ -21,6 +22,13 @@ namespace MedicineMarketPlace.Shared.Context
             base.OnModelCreating(builder);
 
             //builder.Entity<ApplicationUser>();
+
+            builder.Entity<TaxStatus>(_ =>
+            {
+                _.ToTable(TaxStatus.TaxStatusTable);
+                _.HasKey(_ => _.Id);
+                _.HasIndex(_ => _.Name).IsUnique();
+            });
         }
     }
 }

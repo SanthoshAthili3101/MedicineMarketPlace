@@ -70,6 +70,15 @@ namespace MedicineMarketPlace.Admin.Domain.Constants {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tax status created successfully.
+        /// </summary>
+        public static string CreateTaxStatus {
+            get {
+                return ResourceManager.GetString("CreateTaxStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to User created successfully.
         /// </summary>
         public static string CreateUser {
@@ -129,6 +138,33 @@ namespace MedicineMarketPlace.Admin.Domain.Constants {
         public static string SomethingWentWrong {
             get {
                 return ResourceManager.GetString("SomethingWentWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve tax status details.
+        /// </summary>
+        public static string TaxStatus {
+            get {
+                return ResourceManager.GetString("TaxStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Retrieve all tax status details.
+        /// </summary>
+        public static string TaxStatuses {
+            get {
+                return ResourceManager.GetString("TaxStatuses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tax status not found.
+        /// </summary>
+        public static string TaxStatusNotFound {
+            get {
+                return ResourceManager.GetString("TaxStatusNotFound", resourceCulture);
             }
         }
         

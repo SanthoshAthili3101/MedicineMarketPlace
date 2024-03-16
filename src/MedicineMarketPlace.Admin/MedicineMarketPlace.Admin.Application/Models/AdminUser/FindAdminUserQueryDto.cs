@@ -1,5 +1,5 @@
 ﻿namespace MedicineMarketPlace.Admin.Application.Models
-{ 
+{
     public class FindAdminUserQueryDto : BaseQueryDto
     {
 

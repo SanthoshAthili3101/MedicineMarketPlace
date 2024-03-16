@@ -1,4 +1,4 @@
-﻿namespace MedicineMarketPlace.Admin.Application
+﻿namespace MedicineMarketPlace.Admin.Application.Models
 {
     public class BaseQueryDto
     {
